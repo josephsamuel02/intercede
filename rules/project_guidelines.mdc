@@ -1,0 +1,12 @@
+---
+alwaysApply: false
+---
+
+## Development Rules
+
+- Make sure **all pages are mobile friendly**.
+- Make sure **all pages are mobile responsive** during development and review.
+- **Always create a new route** entry in `src/utils/public_routes.ts` for every new page.
+- **Always use the route from `public_routes.ts`** when linking to any page (do not hardcode paths).
+- make sure all buttons nd actons have label when hoverd on {tol/tip or what any els}
+- make sure every component that is conected to a paticular route is alwaise inside the folder of that page/route and not outside of it

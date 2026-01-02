@@ -1,0 +1,17 @@
+export const public_routes = {
+  landing: "/",
+  auth_root: "/auth/*",
+  login: "/auth/login",
+  signup: "/auth/signup",
+  forgot_password: "/auth/forgot-password",
+  reset_password: "/auth/reset-password",
+  dashboard: "/dashboard",
+  dashboard_groups: "/dashboard/groups",
+  dashboard_my_team: "/dashboard/my-team",
+  notifications: "/notifications",
+  messages: "/messages",
+  channels: "/channels",
+  live_events: "/live-events",
+  account: "/account",
+  settings: "/settings",
+};
