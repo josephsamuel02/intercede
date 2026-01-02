@@ -10,7 +10,7 @@ const LandingNavbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-4 bg-white/80 dark:bg-black/50 backdrop-blur-lg border-b border-gray-200 dark:border-white/10">
       <div className="flex items-center gap-2">
         <img
-          src="/image/Intercede Logo.png"
+          src="/image/logo.png"
           alt="Intercede Logo"
           className="h-12 w-12 object-contain"
         />

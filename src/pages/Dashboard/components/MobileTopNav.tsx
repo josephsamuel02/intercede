@@ -7,7 +7,7 @@ const MobileTopNav = () => {
         <div className="md:hidden sticky top-0 z-30 bg-background/80 backdrop-blur-sm border-b border-border p-4 flex items-center justify-between">
             <div className="flex items-center gap-2">
                 <img
-                    src="/image/Intercede Logo.png"
+                    src="/image/logo.png"
                     alt="Intercede Logo"
                     className="h-8 w-8 object-contain"
                 />

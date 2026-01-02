@@ -84,7 +84,7 @@ const Signup: React.FC = () => {
         <CardHeader className="space-y-1">
           <div className="flex items-center justify-center gap-2 mb-2">
             <img
-              src="/image/Intercede Logo.png"
+              src="/image/logo.png"
               alt="Intercede Logo"
               className="h-12 w-12 object-contain"
             />

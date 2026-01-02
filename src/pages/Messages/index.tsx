@@ -214,7 +214,7 @@ const Messages = () => {
           /* Empty State */
           <div className="flex-1 flex flex-col items-center justify-center p-8 text-center text-gray-500 dark:text-gray-400">
             <div className="w-32 h-32 bg-gray-100 dark:bg-white/5 rounded-full flex items-center justify-center mb-6">
-              <img src="/image/Intercede Logo.png" alt="Logo" className="w-16 h-16 opacity-50 grayscale" />
+              <img src="/image/logo.png" alt="Logo" className="w-16 h-16 opacity-50 grayscale" />
             </div>
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">Intercede Web</h2>
             <p className="max-w-md">

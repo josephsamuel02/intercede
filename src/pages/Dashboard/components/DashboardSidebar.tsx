@@ -69,7 +69,7 @@ const Sidebar: React.FC<DashboardSidebarProps> = ({ isOpen, onClose }) => {
         <div className="px-4 py-4 border-b border-gray-200 dark:border-white/10 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <img
-              src="/image/Intercede Logo.png"
+              src="/image/logo.png"
               alt="Intercede Logo"
               className="h-12 w-12 object-contain"
             />

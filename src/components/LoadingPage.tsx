@@ -20,7 +20,7 @@ export const LoadingPage = () => {
           transition={{ duration: 0.5 }}
         >
           <img
-            src="/image/Intercede Logo.png"
+            src="/image/logo.png"
             alt="Intercede Logo"
             className="h-20 w-20 object-contain"
           />
