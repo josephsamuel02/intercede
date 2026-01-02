@@ -44,9 +44,9 @@ const PostFeed: React.FC<PostFeedProps> = ({ posts }) => {
     };
 
     // Sample comments (mock mechanism for now)
-    const getMockComments = (_postId: number) => [
+    const getMockComments = (postId: number) => [
         {
-            id: 1,
+            id: postId * 100 + 1,
             author: "Alice Wonderland",
             avatar: "AW",
             content: "This is super cool! excited to see more.",
@@ -56,7 +56,7 @@ const PostFeed: React.FC<PostFeedProps> = ({ posts }) => {
             isLiked: true,
             replies: [
                 {
-                    id: 101,
+                    id: postId * 100 + 101,
                     author: "You",
                     avatar: "U",
                     content: "Thanks Alice! More coming soon.",
@@ -67,7 +67,7 @@ const PostFeed: React.FC<PostFeedProps> = ({ posts }) => {
             ]
         },
         {
-            id: 2,
+            id: postId * 100 + 2,
             author: "Bob Builder",
             avatar: "BB",
             content: "Can we collaborate on this?",
@@ -163,7 +163,11 @@ const PostFeed: React.FC<PostFeedProps> = ({ posts }) => {
                 size="lg"
             >
                 {selectedPost && (
-                    <CommentSection postId={selectedPost.id} comments={getMockComments(selectedPost.id)} />
+                    <CommentSection
+                        key={selectedPost.id}
+                        postId={selectedPost.id}
+                        comments={getMockComments(selectedPost.id)}
+                    />
                 )}
             </Modal>
         </>

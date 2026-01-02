@@ -1,7 +1,7 @@
 import { SunIcon, MoonIcon } from "@heroicons/react/24/solid";
 import { Link } from "react-router-dom";
 import { public_routes } from "../../../utils/public_routes";
-import { useTheme } from "../../../context/ThemeContext";
+import { useTheme } from "../../../context/useTheme";
 
 const LandingNavbar = () => {
   const { mode, toggleTheme } = useTheme();

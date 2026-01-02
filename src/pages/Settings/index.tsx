@@ -5,7 +5,7 @@ import {
   PaintBrushIcon,
   DevicePhoneMobileIcon,
 } from "@heroicons/react/24/outline";
-import { useTheme } from "../../context/ThemeContext";
+import { useTheme } from "../../context/useTheme";
 
 const Settings = () => {
   const { mode, toggleTheme } = useTheme();

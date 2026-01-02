@@ -164,7 +164,7 @@ const Messages = () => {
             </div>
 
             {/* Messages Area */}
-            <div className="flex-1 overflow-y-auto p-4 space-y-4 bg-[url('/image/chat-bg-pattern.png')] bg-repeat dark:bg-none">
+            <div className="flex-1 overflow-y-auto p-4 space-y-4 bg-[url('/image/background-map.png')] bg-cover bg-center dark:bg-none">
               {/* Date separator example */}
               <div className="flex justify-center">
                 <span className="text-xs font-medium text-gray-500 bg-gray-100 dark:bg-white/10 px-3 py-1 rounded-full">Today</span>

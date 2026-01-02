@@ -1,15 +1,6 @@
-import React, { createContext, useContext, useEffect, useState } from "react";
-
-type ThemeMode = "light" | "dark";
-
-interface ThemeContextValue {
-  mode: ThemeMode;
-  toggleTheme: () => void;
-}
-
-const ThemeContext = createContext<ThemeContextValue | undefined>(undefined);
-
-const THEME_STORAGE_KEY = "intercede-theme";
+import React, { useEffect, useState } from "react";
+import { ThemeContext, THEME_STORAGE_KEY } from "./theme-context";
+import type { ThemeMode } from "./theme-context";
 
 export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   // Initialize with saved theme or default to light
@@ -50,15 +41,3 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     </ThemeContext.Provider>
   );
 };
-
-export const useTheme = (): ThemeContextValue => {
-  const ctx = useContext(ThemeContext);
-  if (!ctx) {
-    throw new Error("useTheme must be used within a ThemeProvider");
-  }
-  return ctx;
-};
-
-
-
-

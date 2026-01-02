@@ -13,7 +13,7 @@ import {
     MoonIcon
 } from "@heroicons/react/24/outline";
 import { public_routes } from "../../../utils/public_routes";
-import { useTheme } from "../../../context/ThemeContext";
+import { useTheme } from "../../../context/useTheme";
 import supabase from "../../../lib/supabase-client";
 import { showSuccessToast } from "../../../utils/toast-functions";
 import { cn } from "../../../lib/utils";

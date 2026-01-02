@@ -148,7 +148,7 @@ const CommentItem: React.FC<{ comment: Comment; onReply: (id: number, content: s
     );
 };
 
-export const CommentSection: React.FC<CommentSectionProps> = ({ postId: _postId, comments: initialComments }) => {
+export const CommentSection: React.FC<CommentSectionProps> = ({ postId, comments: initialComments }) => {
     const [comments, setComments] = useState<Comment[]>(initialComments);
     const [newComment, setNewComment] = useState("");
 
@@ -156,7 +156,7 @@ export const CommentSection: React.FC<CommentSectionProps> = ({ postId: _postId,
         if (!newComment.trim()) return;
 
         const comment: Comment = {
-            id: Date.now(),
+            id: Number(`${postId}${Date.now()}`),
             author: "You",
             avatar: "U",
             content: newComment,
@@ -173,7 +173,7 @@ export const CommentSection: React.FC<CommentSectionProps> = ({ postId: _postId,
     // Helper to deeply add a reply
     const addReply = (targetId: number, content: string) => {
         const newReply: Comment = {
-            id: Date.now(),
+            id: Number(`${postId}${Date.now()}${Math.floor(Math.random() * 1000)}`),
             author: "You",
             avatar: "U",
             content: content,

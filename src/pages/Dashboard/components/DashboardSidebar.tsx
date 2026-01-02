@@ -20,7 +20,7 @@ import supabase from "../../../lib/supabase-client";
 import { showSuccessToast } from "../../../utils/toast-functions";
 import { useNavigate, useLocation, Link } from "react-router-dom";
 import { public_routes } from "../../../utils/public_routes";
-import { useTheme } from "../../../context/ThemeContext";
+import { useTheme } from "../../../context/useTheme";
 import { cn } from "../../../lib/utils";
 
 interface DashboardSidebarProps {
